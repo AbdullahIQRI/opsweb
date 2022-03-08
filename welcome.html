@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function start() {
+            var name = document.getElementById("name").value;
+            localStorage.setItem("StudentName", name);
+            window.open('Q1.html', '_Self');
+        }
+    </script>
+    <style>
+       
+
+        
+        input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    background: #006dcc;
+    border-color: maroon;
+    box-shadow: 0 3px 0 #0165b6;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background:lightslategrey;
+}
+
+    </style>
+
+</head>
+<body background="bg1.png">
+    <h1> welcome in this fortnite quiz you will have 5 questions</h1>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <div class="row">
+        <input type="submit" onclick="start()" value="Start Quiz">
+    </div>
+    <h2>5/5=INSAIN
+        4/5=Pro
+        3/5=medioqor
+        2/5=bad
+        1/5=poop
+        0/5=You have never even played this game
+    </h2>
+</body>
+
+</html>

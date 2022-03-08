@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .hi-hi{
+background-repeat: no-repeat;
+background-size: 2200px 1000px;
+        }
+        .Bg1{
+         color:yellow;  
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body background="fnbg5.jpg" class="hi-hi">
+    <h1>Welcome </h1>
+    <h1 id="nam"></h1>
+    <h2>Score</h2>
+    <h2 id="score"></h2>
+
+    <br>
+    <h2>Q.4 Can you tunnle?</h2>
+    <input type="radio" id="a" name="q1" >
+    <label >Yes</label><br>
+
+    <input type="radio" id="b" name="q1" >
+    <label >most of the time</label><br>
+
+    <input type="radio" id="c" name="q1" >
+    <label >Sometimes</label><br>
+
+    <input type="radio" id="d" name="q1" >
+    <label >No</label>
+
+
+    <br>
+    <button onclick="next()">NEXT</button>
+</body>
+
+<script>
+    var name = localStorage.getItem("StudentName");
+    var  score = parseInt(localStorage.getItem("score"));
+
+
+    window.onload = document.getElementById("nam").innerText = name;
+    window.onload = document.getElementById("score").innerText = score;
+    function next() {
+        if (document.getElementById('a').checked) {
+            score = score+1;
+        }
+        else {
+            score = score;
+        }
+        localStorage.setItem("score", score);
+        window.open('Q5.html', '_Self');
+    }
+
+</script>
+
+</html>

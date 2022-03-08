@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="Javascript">
+       function calculate(){
+        var Day = document.getForm.getDay.value
+        var Month = document.getForm.getMonth.value
+        var Year = document.getForm.getYear.value
+        Month = Month - 1
+        var theDate = new Date()
+        theDate.setDate(Day)
+        theDate.setMonth(Month)
+        theDate.setYear(Year)
+        var month = Month + 1
+        var dayArray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday") 
+        alert("The day is: " + dayArray[theDate.getDay()] + "( " + Day + "/" + month + "/" + Year + " )")
+        
+        }
+    </script>
+</head>
+<body>
+    <form name="getForm">
+        <center>
+        <h1>Date to Day Converter</h1>
+        Enter a date:<br />
+        Day: <input type="text" name="getDay" length=2 value="01" size="2" />
+        Month: <input type="text" name="getMonth" length=2 value="01" size="2" />
+        Year: <input type="text" name="getYear" length=4 value="2005" size="4" />
+        <br />
+        <input type="button" value="Calculate!" onClick=calculate() />
+    </center>
+        </form>
+ 
+</body>
+</html>

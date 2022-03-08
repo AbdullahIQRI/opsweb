@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{height: 1000px;width: 800px;margin-left: auto;}
+        header{height: 200px;width: 800px;background-color: darkslateblue;}
+        nav  div ul{list-style-type:none; margin: 0;padding: 0;}
+    div ul li a{text-decoration: none;color: crimson; line-height: 30px;display:block;}
+    div ul li{background-color: darkblue; height: 35px; width: 120px;float: left; border: darkslateblue solid 2px; 
+    text-align: center; border-radius: 12px; position: relative;}
+    div ul li a:hover{height: 35px; width: 120px;background-color: deepskyblue; border-radius: 12px;}
+    div ul ul{margin-top: 3px; display: none; position: absolute;}
+    div ul li:hover>ul{display: block;}
+    div ul ul ul{margin-left: 120px; top: 0;}
+        section{height: 700px;width: 600px;background-color: lawngreen;}
+        aside{height: 700px;width: 200px;background-color: lightcoral;float:right;}
+        footer{height: 100px;width: 800px;background-color: maroon;}
+    </style>
+</head>
+<body>
+    
+</body>
+<header>
+    <center>
+        <h1 style="padding-top: 80px;">Estatic</h1>
+    </center>
+</header>
+<nav> <div>
+    <ul>
+    <li><a href='#'>in cunstruction</a></li>
+    <ul>
+        <li><a href='#'> List B A</a></li>
+        <li><a href='#'> List B B</a></li>
+    </ul>
+    <li><a href='#'>Home</a>
+        <ul>
+            <li><a href='file:///C:/Users/Arzan/Desktop/Fortnite/code/coding5.html'>web</a></li>
+            <li><a href='https://www.youtube.com/'> youtube</a></li>
+        </ul>
+        <li><a href='#'>Galery</a>
+            <ul>
+                <li><a href='https://www.twitch.tv/'> List B A</a></li>
+                <li><a href='file:///C:/Users/Arzan/Desktop/code/arzan2.html'> List B B</a></li>
+            </ul>
+
+        <ul>
+            <li><a href='file:///C:/Users/Arzan/Desktop/code/coding.html'>web</a></li>
+            <li><a href='file:///C:/Users/Arzan/Desktop/code/css.html'>web</a></li>
+                <li><a href='file:///C:/Users/Arzan/Desktop/Fortnite/code/arzan3.html'>web</a></li>
+                <li><a href='file:///C:/Users/Arzan/Desktop/code/form-1.html'> web</a></li>
+            </ul>
+            <li><a href='#'>Contact Us</a>
+            <ul>
+                <li><a href='file:///C:/Users/Arzan/Desktop/Fortnite/code/form-1.html'>form</a></li>
+                <li><a href='https://mail.google.com/mail/u/0/#inbox'> gmail</a></li>
+            </ul>
+            <li><a href="#">coming soon</a></nav>
+<section><h1>Estatic gaming team</h1></section>
+<img src="bg13.jpg" style="width: 200px; height: 180px;"/>
+</aside>
+<footer>
+    <center>
+        <h1>we started 2019 and kicked everyone out and we are starting again 2020 :)</h1>
+    </center>
+</footer>
+</body>
+</html>

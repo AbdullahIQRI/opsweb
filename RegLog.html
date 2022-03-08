@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+       var Runame;
+        var Rpwd;
+        var Lunam;
+        var Lpwd;
+        function reg() {
+           Runame = document.getElementById("Ruser").value;
+            Rpwd = document.getElementById("Rpwd").value;
+
+
+            alert("congrats you have reg into are website have fun with the feturs you get when you have an account")
+        }
+        function login() {
+            Lunam = document.getElementById("Luser").value;
+            Lpwd = document.getElementById("Lpwd").value;
+
+            if (Lunam == Runame && Lpwd == Rpwd)
+
+
+            
+        {
+            alert ("welcome have fun playing games/exploring the other parts of op's website");
+        }
+        else{
+            alert ("sorry you have faild your passwork/username is invaled. if you forgot please click here > file:///C:/Users/Arzan/Desktop/code/000.html")
+        }}
+    </script>
+</head>
+<body>
+    <h1> Registration </h1>
+    <br>
+    UserName <input type="text" id="Ruser" />
+    <br>
+    Password <input type="text" id="Rpwd" />
+    <br>
+    <button onclick="reg()">Register</button>
+    <br>
+    <br>
+    <h1> Login </h1>
+    <br>
+    UserName <input type="text" id="Luser" />
+    <br>
+    Password <input type="text" id="Lpwd" />
+    <br>
+    <button onclick="login()">Login</button>
+</body>
+</html>

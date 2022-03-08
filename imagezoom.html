@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block {
+    display: block;
+    height: 425px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 640px;
+}
+.block img {
+    transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+}
+.block .block-caption {
+    background: rgba(0,0,0,0.6);
+    bottom: 0;
+    color: #fff;
+    display: table;
+    left: 0;
+    opacity: 0;
+    padding: 10px 0;
+    position: absolute;
+    transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+    width: 640px;
+}
+.block:hover .block-caption {
+    opacity: 1;
+}
+.block:hover img {
+    transform: scale(1.5) rotateZ(-5deg);
+    -moz-transform: scale(1.5) rotateZ(-5deg);
+    -webkit-transform: scale(1.5) rotateZ(-5deg);
+    -o-transform: scale(1.5) rotateZ(-5deg);
+}
+    </style>
+</head>
+<body>
+     <div class="block">
+         <img title="HIIIIIIIII" src="bg.jpg">
+     <div class="block-caption">
+IM A GOOD BOY
+     </div>
+     </div>
+</body>
+</html>

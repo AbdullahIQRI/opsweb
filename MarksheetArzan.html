@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myMarksheetFun()
+        {
+
+        var percent =parseInt(prompt("whats your fav drink"));
+        var grade;
+        if(percent  > 99 )
+        {
+            grade = "coke";
+        }
+        else if(percent  > 90)
+        {
+            grade = "sprite";
+        }
+        else if(percent  > 80)
+        {
+            grade = "fanta";
+        }
+        else if(percent  > 70)
+        {
+            grade = "lemenade";
+        }
+        else{
+            grade = "water";
+        }
+        document.getElementById("printgrade").innerHTML = grade;
+        alert(grade);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="myMarksheetFun()"> whats ur fav drink 100=coke 91=sprite 81=fanta 71=lemenade 60=water</button>
+    <br>
+    <h1 id="printgrade"></h1>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Tetris</title>
+        <link rel='stylesheet' href='tetris style.css' />
+    </head>
+    <body background="bg1.png">
+        <h1>Arrrowkey up=rotate Arrrowkey down=go down faster arrownkeyleft=go left arrowkey right= go right</h1>
+        <h2>TETRIS</h2>
+        <audio id="clearsound" src="pop.ogg" preload="auto"></audio>
+        <canvas width='300' height='600'></canvas>
+        <button id="playbutton" onclick="playButtonClicked();">Play</button>
+        <script src='tetris.js'></script>
+        <script src='controller.js'></script>
+        <script src='render.js'></script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<style>
+    Bg1{
+     color: blue;  
+    }
+</style>
+<body background="bg1.png">
+    <h1 >Result </h1>
+    <table border="1">
+        <tr>
+            <td>Student Name</td>
+            <td>
+                <p id=nam></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Student Score</td>
+            <td>
+                <p id=score></p>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <h1></h1>
+    <Button onclick="restart()">Re-Start Quiz</Button>
+    <h2>5/5=INSAIN
+        4/5=Pro
+        3/5=medioqor
+        2/5=bad
+        1/5=poop
+        0/5=You have never even played this game
+    </h2>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var name = localStorage.getItem("StudentName");
+        window.onload = document.getElementById('nam').innerText = name;
+
+        window.load = document.getElementById('score').innerText = parseInt(localStorage.getItem("score"));
+
+
+            function restart()
+            {
+                window.open('welcome.html', '_Self')
+            }
+    </script>
+
+</head>
+</html>

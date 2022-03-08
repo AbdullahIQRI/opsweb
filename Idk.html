@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My cool THINGYYYYYYYYYYYYYYYYYYYYY</title>
+</head>
+<style>
+    h1{
+        color: brown;
+    }
+
+h2{
+    color: chartreuse;
+}
+</style>
+<script>
+    var score = parseInt(localStorage.getItem("score"));
+
+
+window.onload = document.getElementById("score").innerText = score;
+function next() {
+if (document.getElementById('a').checked) {
+    score = score+1;
+}
+
+</script>
+<body background="bg1.png">
+    <h1>OH, um hi didnt see you there.So You wanna here about my life. Well its not that interesting so here ya go</h1>
+    <h2>so i wake up in the morning around 7 am. and eat and get ready for school. then i go to school at 8:05 then get out of school at 3:20. I eat </h2>
+
+    <h2>  can you guess my fav food???</h2>
+    <input type="radio" id="a" name="q1" >
+    <label >Pizza</label><br>
+
+    <input type="radio" id="b" name="q1" >
+    <label >Butter chicken </label><br>
+
+    <input type="radio" id="c" name="q1" >
+    <label >apple</label><br>
+
+    <input type="radio" id="d" name="q1" >
+    <label >Something gross</label>
+
+    <br>
+    <button onclick="next()"><a href="idk2.html">NEXT PAGEEEEEEEEEEEEEEE</a></button>
+</body>
+</html>

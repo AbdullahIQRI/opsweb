@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          function cb1() {
+            document.body.style.backgroundColor = "brown";
+
+        }
+        function cb2() {
+            document.body.style.backgroundColor = "black";
+        }
+
+        function cb3() {
+            document.body.style.backgroundColor = "yellow";
+        }
+
+        function cb4() {
+            document.body.style.backgroundColor = "purple";
+        }
+
+        function cb5() {
+            document.body.style.backgroundColor = "blue";
+        }
+
+        function cb6() {
+            document.body.style.backgroundColor = "orange";
+        }
+        function writebg()
+        {
+            var color = prompt("Enter Color: ");
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body>
+    <input type="radio" id="brown" name="bg" value="brown" onclick="cb1()"/> BROWN
+    <br>
+    <input type="radio" id="black" name="bg" value="black" onclick="cb2()"/> black
+    <br>
+    <input type="radio" id="yellow" name="bg" value="yellow" onclick="cb3()"/> yellow
+    <br>
+    <input type="radio" id="purple" name="bg" value="purple" onclick="cb4()"/> purple
+    <br>
+    <input type="radio" id="blue" name="bg" value="blue" onclick="cb5()"/> blue
+    <br>
+    <input type="radio" id="orange" name="bg" value="orange" onclick="cb6()"/> orange
+    <br>
+    <button onclick="writebg()">change color (click me)</button>
+</body>
+</html>

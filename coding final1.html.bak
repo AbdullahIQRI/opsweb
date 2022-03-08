@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome to the OP website</h1>
+    <h1>Welcome to my brand new website here you can play games find things i like hang out and maybe visit some of my other websites</h1>
+    <style>
+        div ul{list-style-type:none; margin: 0;padding: 0;}
+        div ul li a{text-decoration: none;color: crimson; line-height: 30px;display:block;}
+        div ul li{background-color: darkblue; height: 35px; width: 120px;float: left; border: darkslateblue solid 2px; 
+        text-align: center; border-radius: 12px; position: relative;}
+        div ul li a:hover{height: 35px; width: 120px;background-color: deepskyblue; border-radius: 12px;}
+        div ul ul{margin-top: 3px; display: none; position: absolute;}
+        div ul li:hover>ul{display: block;}
+        div ul ul ul{margin-left: 120px; top: 0;}
+        </style>
+
+</body>
+</html>
+<div>
+    <ul>
+    <li><a href='#'>in cunstruction</a></li>
+    <ul>
+        <li><a href='#'> List B A</a></li>
+        <li><a href='#'> List B B</a></li>
+    </ul>
+    <li><a href='#'>games</a>
+        <ul>
+            <li><a href='https://scratch.mit.edu/projects/321813312/editor'>g vs r</a></li>
+            <li><a href="https://scratch.mit.edu/projects/320948052/editor">ball bounce</a></li>
+        </ul>
+        <li><a href='#'>things i like</a>
+            <ul>
+                <li><a href="https://www.netflix.com/">neflix</a></li>
+                <li><a href="https://store.steampowered.com/">video games </a></li>
+            </ul>
+
+        <ul>
+            <li><a href='https://www.netflix.com/'>netflix</a></li>
+            <li><a href='https://store.steampowered.com/'>video games</a></li>
+                <li><a href='https://www.disneyplus.com/welcome?&cid=DSS-Search-Bing-71700000052028934&s_kwcid=AL!8468!10!79646003304092!79646109774923&msclkid=898984cd6d631b700e9adbd77e5d61ec&gclid=898984cd6d631b700e9adbd77e5d61ec&gclsrc=3p.ds'>disney +</a></li>
+            </ul>
+            <li><a href='#'>Contact Us</a>
+            <ul>
+                <li><a href='file:///C:/Users/Arzan/Desktop/Fortnite/code/form-1.html'>form/dost not contact me</a></li>
+                <li><a href='https://mail.google.com/mail/u/0/#inbox'> gmail-arzan.a905@gmail.com</a></li>
+            </ul>
+            <li><a href="#">coming soon</a>
+                <body background="bg.jpg">
+
+                </body>

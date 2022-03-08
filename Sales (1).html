@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function submitorder()
+        {
+            var cb =parseInt(document.getElementById("cbq").value);
+            var cz =parseInt(document.getElementById("czq").value);
+            var cr =parseInt(document.getElementById("crq").value);
+            var cp =parseInt(document.getElementById("cpq").value);
+            var cc =parseInt(document.getElementById("ccq").value);
+
+            var totalfood = (cb * 0) + (cz * 0) + (cr * 0) + (cp * 0) + (cc * 0);
+            document.getElementById("tf").value = totalfood.toString();
+
+            var bs =parseInt(document.getElementById("bsq").value);
+            var cs =parseInt(document.getElementById("csq").value);
+            var ms =parseInt(document.getElementById("msq").value);
+            var os =parseInt(document.getElementById("osq").value);
+            var ps =parseInt(document.getElementById("psq").value);
+
+            var totalDrinks = (bs * 0) + (cs *0) +(ms * 0) +(os * 0) +(ps * 0);
+            document.getElementById("td").value = totalDrinks.toString();
+
+            var totalcost = totalfood + totalDrinks;
+            document.getElementById("tc").value = totalcost.toString();
+
+
+        }
+    </script>
+    <style>
+        .button {
+        background-color:brown;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+  }
+        h1 {
+            color: darkblue;
+        }
+   button{
+height:50px;
+width: 100px;
+color: darkblue;
+background-color: brown;
+   }
+   h3{
+       color: blue;
+   }
+    </style>
+</head>
+<body background="bg1.png">
+    <center>
+    <h1> OP's GAMES!!!!</h1>
+    <br><br>
+
+    <h3> buy games Here</h3> 
+    <br>
+    op TETRIS (free) <input type="number" id="cbq" value="0"/>  <br>
+    Snakes And Ladders (free) <input type="number" id="czq" value="0"/> <br>
+    Outrun (free) <input type="number" id="crq" value="0"/> <br>
+    Pong 2.0 (free) <input type="number" id="cpq"value="0"/> <br>
+    Pong 2.0 EXTREEM<input type="number" id="ccq"value="0"/>
+
+    <br>
+
+
+    <br>
+    TicTacToe (free)<input type="number" id="bsq" value="0"/> <br>
+    Puzzle (free) <input type="number" id="csq" value="0"/> <br>
+   Catch the mole (free) <input type="number" id="msq" value="0"/> <br>
+    Catch SpongeBob And Patrick (free) <input type="number" id="osq" value="0"/> <br>
+    Shoot the birds IN SPACEE + Shoot the birds (free) <input type="number" id="psq" value="0"/>
+    <br>
+    <button onclick="submitorder()"><a href="Games.html">Click me to buy</a></button>
+
+    <br>
+
+    <h3> money</h3>
+    
+    
+    </center>
+    <a href="calculator.html" class="button">calculator</a>
+</body>
+</html>
